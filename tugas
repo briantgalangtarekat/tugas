@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <conio.h>
+//Program pengurutan data dari yang terkecil ke yang terendah
+int main ()
+{ int a, b, c, hasil;
+//nilai integer char back, yakin;
+
+    printf("\nProgram untuk mengurutkan data dari\nterKecil ke terBesar");
+    printf("\n\n======================================>>>");
+    printf("\n\nMasukkan nilai untuk A :");
+    scanf("%d", &a);
+    printf("\nMasukkan nilai untuk B :");
+    scanf("%d", &b);
+    printf("\nMasukkan nilai untuk C :");
+    scanf("%d", &c);
+
+    if (a>b)
+    {   hasil=a;
+        a=b;
+        b=hasil; }
+    if (a>c)
+    {   hasil=a;
+        a=c;
+        c=hasil; }
+    if (b>c)
+    {   hasil=b;
+        b=c;
+        c=hasil; }
+        printf("\n======================================>>>");
+        printf("\n\nHasil Pengurutan angka menjadi %d %d %d", a, b, c);
+
+}
